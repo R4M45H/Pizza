@@ -1,0 +1,435 @@
+/*font-family: 'Roboto', sans-serif;*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #494949;
+}
+a,
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/*=======DropDownMenu=======*/
+ .dropdown__icon{
+   display: inline-block;
+   cursor: pointer;
+ }
+ 
+ .bar1, .bar2, .bar3 {
+   width: 35px;
+   height: 5px;
+   background-color: #333;
+   margin: 6px 0;
+   transition: 0.4s;
+ }
+ 
+
+ /* Dropdown Button */
+.dropbtn {
+  display: none;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  
+  
+}
+
+/* Dropdown button on hover & focus */
+/* .dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+} */
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding-top: 20px;
+  
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  text-transform: uppercase;
+  text-align: right;
+  position: absolute;
+  background-color: #000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 32px;
+  margin-left: -123px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #fff;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-weight: 600;
+  display: block;
+  
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(95, 95, 95)}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+/*-------Header--------*/
+
+.header {
+  width: 100%;
+  background-color: #eaeaea;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  background-repeat: no-repeat;
+  padding: 37px 0px 34px 10px;
+}
+.header__nav,
+.tab-header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+  font-size: 17px;
+  color: #494949;
+  margin: 0px 0px 0px 22px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.header__nav > li {
+  list-style: none;
+  margin-left: 19px;
+  padding-left: 23px;
+  position: relative;
+}
+
+.header__nav a {
+  color: #494949;
+}
+
+.header__nav > li::before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 17px;
+  background-color: #494949;
+  left: 0;
+  position: absolute;
+}
+
+.header__nav > li:first-child::before {
+  display: none;
+}
+
+/*-------Content--------*/
+
+.content {
+  width: 100%;
+  background-image: url("../images/bg-content.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 212px 0;
+  display:flex;
+  justify-content: center;
+}
+.content__inner {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.content__text {
+  width: 600px;
+  color: #fff;
+}
+.content__text-title h2 {
+  font-size: 49px;
+}
+.content__text-description p {
+  width: 600px;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 10px 35px 10px 0px;
+}
+.content__btn {
+  display: inline-block;
+  margin-top: 21px;
+  margin-left: -10px;
+  padding: 12px 30px 12px 20px;
+  border: 1px solid #fff;
+}
+.content__btn a {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.content__slice-pizza img {
+  width: 526px;
+  height: 534px;
+  right: -68px;
+  top: -131px;
+  /* margin: 90px 0px 0px 75px; */
+  position: absolute;
+}
+
+/*-------Create--------*/
+
+.create {
+  background-color: #eaeaea;
+}
+.create__top-box {
+  text-align: center;
+  padding-top: 110px;
+}
+.create__title > h2 {
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #494949;
+  display: inline-block;
+  position: relative;
+  padding-right: 145px;
+  padding-left: 127px;
+}
+.create__title > h2::before,
+.create__title > h2::after {
+  content: "";
+  background-image: url("../images/shape2.svg");
+  position: absolute;
+  width: 102px;
+  height: 28px;
+  display: block;
+  top: calc(50% - 14px);
+}
+.create__title > h2::after {
+  left: 0;
+}
+.create__title > h2::before {
+  right: 20px;
+}
+
+.subtitle p {
+  padding-top: 10px;
+  font-size: 18px;
+  color: #959595;
+  font-weight: 400;
+  text-align: center;
+}
+
+/*=========Tabs========*/
+
+.tabs {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* Стили для списка вкладок */
+.tab-header {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 auto;
+  width: 700px;
+}
+
+/* Стили для вкладки */
+.tab-header__item {
+  margin: 40px 0;
+  cursor: pointer;
+}
+
+/* Стили для активной вкладки */
+.tab-header__item.active {
+  color: #494949;
+  position: relative;
+  top: 1px;
+}
+
+/* Стиль для списка контейнеров с содержимым вкладок 
+.tab-content {
+}*/
+
+/* Стили для контейнера с содержимым вкладки */
+.tab-content__item {
+  display: none;
+}
+
+/* Стили для активного контейнера вкладки */
+.tab-content__item.active {
+  display: block;
+}
+
+.tab-header > li {
+  list-style: none;
+  margin-left: 22px;
+  position: relative;
+  padding-bottom: 27px;
+}
+.tab-header > li.active {
+  border-bottom: 4px solid #ee252d;
+  position: relative;
+}
+.tab-header > li:first-child::after {
+  display: none;
+}
+.tab-header > li::after {
+  content: "";
+  width: 2px;
+  height: 17px;
+  display: block;
+  background-color: #494949;
+  left: -30px;
+  top: 0;
+  position: absolute;
+}
+
+.tab-header > li.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-bottom: 7px solid #ee252d;
+  background-color: #eaeaea;
+}
+
+.box {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.11);
+  display: flex;
+  justify-content: space-between;
+}
+.box-item {
+  padding: 64px 0px 58px 55px;
+}
+
+.number {
+  font-family: "Roboto", sans-serif;
+  font-size: 120px;
+  font-weight: 900;
+  color: #000;
+  position: relative;
+  margin-bottom: 8px;
+  margin-left: 0px;
+  margin-top: 0;
+  color: #282828;
+}
+.number::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+.number-1::after {
+  background-image: url("../images/item-1.png");
+  width: 126px;
+  height: 71px;
+  left: 69px;
+  top: calc(50% - 35px);
+}
+.number-2::after {
+  background-image: url("../images/item-2.png");
+  width: 184px;
+  height: 81px;
+  left: 88px;
+  top: calc(50% - 40px);
+}
+.number-3::after {
+  background-image: url("../images/item-3.png");
+  width: 142px;
+  height: 68px;
+  left: 94px;
+  top: calc(50% - 34px);
+}
+.box-text {
+  border-right: 2px solid #eaeaea;
+  padding-right: 55px;
+}
+.box-item:last-child .box-text {
+  border-right: none;
+}
+.box-text h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #282828;
+  font-weight: 800;
+  font-size: 45px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.box-text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #282828;
+  line-height: 24px;
+  margin-top: 0px;
+}
+
+/*==========lenta===========*/
+.lenta {
+  padding: 60px 0 86px 0;
+}
+.create__lenta {
+  padding: 30px 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/lenta.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 100%;
+  height: 93px;
+  
+}
+
+.create__lenta a {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/*==========Footer==========*/
+.footer {
+  background-image: url("../images/bg-footer.png");
+  width: 100%;
+  text-align: center;
+}
+.footer p {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 40px 0;
+}

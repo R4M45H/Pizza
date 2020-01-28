@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pizza</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="logo">
+             <a href=""><img src="images/pizza.png" alt="logo" /></a> 
+          </div>
+          <ul class="header__nav">
+            <li><a href="#">newsletter</a></li>
+            <li><a href="#">comunity</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a href="#">contact us</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <div onclick="myFunction()" class="dropbtn dropdown__icon" >
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">newsletter</a>
+            <a href="#">comunity</a>
+            <a href="#">shop</a>
+            <a href="#">contact us</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="container">
+        <div class="content__inner">
+          <div class="content__text">
+            <div class="content__text-title">
+              <h2>Create Your Own Pizza</h2>
+            </div>
+            <div class="content__text-description">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                since the 1500s.
+              </p>
+            </div>
+            <div class="content__btn">
+              <a href="#">read more</a>
+            </div>
+          </div>
+          <div class="content__slice-pizza">
+            <img
+              src="images/slice-pizza-2png.png"
+              alt="slice-pizza"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="create">
+      <div class="container">
+        <div class="create__inner">
+          <div class="create__top-box">
+            <div class="create__title">
+              <h2>How to progress?</h2>
+            </div>
+            <div class="subtitle">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesettin</p>
+            </div>
+          </div>
+            
+        <!-- Общий контейнер для табов -->
+          <div class="tabs">
+              <!--  Контейнер с вкладками   -->
+              <ul class="tab-header">
+                <li class="tab-header__item js-tab-trigger active" data-tab="1">pizza cartoon</li >
+                <li class="tab-header__item js-tab-trigger" data-tab="2">burger</li>
+                <li class="tab-header__item js-tab-trigger" data-tab="3">sandwich</li>
+                <li class="tab-header__item js-tab-trigger" data-tab="4">loremispsum</li>
+              </ul>
+  
+              <!--  Контейнер с блоками, которые содержат контент вкладок   -->
+              <div class="tab-content">
+                <div class="tab-content__item js-tab-content active" data-tab="1">
+                  <div class="box ">
+                    <div class="box-item">
+                      <p class="number number-1">1</p>
+                      <div class="box-text">
+                        <h3>create it</h3>
+                        <p>Choose from a selection of tastilicious toppings to create your
+                          own pizza</p>
+                      </div>
+                    </div>
+      
+                    <div class="box-item">
+                      <p class="number number-2">2</p>
+                      <div class="box-text">
+                        <h3>name it</h3>
+                        <p>Choose from a selection of tastilicious toppings to create your
+                          own pizza</p>
+                      </div>
+                    </div>
+      
+                    <div class="box-item">
+                      <p class="number number-3">3</p>
+                      <div class="box-text">
+                        <h3>fame it</h3>
+                        <p>Choose from a selection of tastilicious toppings to create your
+                          own pizza</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-content__item js-tab-content" data-tab="2">
+                  <div class="box ">
+                    <div class="box-item">
+                      <p class="number number-1">4</p>
+                      <div class="box-text">
+                        <h3>create it</h3>
+                        <p>Choose from a selection of tastilicious toppings to create your
+                          own pizza</p>
+                      </div>
+                    </div>
+      
+                    <div class="box-item">
+                      <p class="number number-2">5</p>
+                      <div class="box-text">
+                        <h3>name it</h3>
+                        <p>Choose from a selection of tastilicious toppings to create your
+                          own pizza</p>
+                      </div>
+                    </div>
+      
+                    <div class="box-item">
+                      <p class="number number-3">6</p>
+                      <div class="box-text">
+                        <h3>fame it</h3>
+                        <p>Choose from a selection of tastilicious toppings to create your
+                          own pizza</p>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+                <div class="tab-content__item js-tab-content" data-tab="3">
+                  <div class="box ">
+                    <div class="box-item">
+                      <p class="number number-1">7</p>
+                      <div class="box-text">
+                        <h3>create it</h3>
+                        <p>Choose from a selection of tastilicious toppings to create your
+                          own pizza</p>
+                      </div>
+                    </div>
+      
+                    <div class="box-item">
+                      <p class="number number-2">8</p>
+                      <div class="box-text">
+                        <h3>name it</h3>
+                        <p>Choose from a selection of tastilicious toppings to create your
+                          own pizza</p>
+                      </div>
+                    </div>
+      
+                    <div class="box-item">
+                      <p class="number number-3">9</p>
+                      <div class="box-text">
+                        <h3>fame it</h3>
+                        <p>Choose from a selection of tastilicious toppings to create your
+                          own pizza</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-content__item js-tab-content" data-tab="4">
+                  <div class="box ">
+                    <div class="box-item">
+                      <p class="number number-1">1</p>
+                      <div class="box-text">
+                        <h3>create it</h3>
+                        <p>Choose from a selection of tastilicious toppings to create your
+                          own pizza</p>
+                      </div>
+                    </div>
+      
+                    <div class="box-item">
+                      <p class="number number-2">2</p>
+                      <div class="box-text">
+                        <h3>name it</h3>
+                        <p>Choose from a selection of tastilicious toppings to create your
+                          own pizza</p>
+                      </div>
+                    </div>
+      
+                    <div class="box-item">
+                      <p class="number number-3">3</p>
+                      <div class="box-text">
+                        <h3>fame it</h3>
+                        <p>Choose from a selection of tastilicious toppings to create your
+                          own pizza</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="lenta">
+            <div class="create__lenta">
+              <a href="#"> <div class="legend">  <p>create your legend</p> </div>  </a>
+            </div>
+        </div>
+       </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <p>© 2020 Graphic Resources . All rights reserved.</p>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+        
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+    </script>
+  </body>
+</html>
