@@ -275,6 +275,16 @@
     font-size: 12px;
 }
 }
+@media (max-width: 375px) {
+  .dropbtn {
+    left: 295px;
+  }
+}
+@media (max-width: 360px) {
+  .dropbtn {
+    left: 290px;
+  }
+}
 @media (max-width: 320px) {
   .header__inner {
     max-width: 320px;
