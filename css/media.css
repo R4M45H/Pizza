@@ -82,6 +82,7 @@
     font-size: 35px;
     padding-right: 95px;
     padding-left: 77px;
+    padding: 0;
   }
   .create__title > h2::before,
   .create__title > h2::after {
@@ -191,20 +192,123 @@
   }
 }
 @media (max-width: 480px) {
-  
-
   .dropbtn {
     display: block;
     position: fixed;
-    content:'';
-    left: 380px;
+    content: "";
+    left: 340px;
     top: 15px;
     z-index: 2;
   }
-
-
-  .header__nav{
+  .header__nav {
     display: none;
   }
- 
+}
+
+@media (max-width: 450px) {
+  .content {
+    padding: 20px 0;
+  }
+  .content__text-title h2 {
+    font-size: 28px;
+  }
+  .content__text-description p {
+    font-size: 12px;
+  }
+  .create__title > h2 {
+    font-size: 28px;
+  }
+  .subtitle p {
+    font-size: 12px;
+  }
+  .content__btn {
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 6px 20px 6px 20px;
+  }
+  .tab-header {
+    font-size: 14px;
+  }
+  .tab-header > li {
+    padding-bottom: 12px;
+  }
+  .box {
+    text-align: center;
+    width: 250px;
+    padding: 20px 30px 20px 30px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .box-text {
+  width: 190px;
+  }
+  .number {
+  font-size: 50px;
+  }
+  .number-1::after {
+    background-image: url(../images/item-1.png);
+    width: 80px;
+    height: 50px;
+    background-size: contain;
+  }
+  .content__text-title h2 {
+  font-size: 18px;
+  }
+  .content__text-description p {
+    padding: 10px 0px;
+  }
+  .box-text h3 {
+    font-size: 28px;
+  }
+  .box-text p {
+  font-size: 14px;
+  line-height: 20px;
+  }
+  .create__title > h2 {
+    font-size: 18px;
+  }
+  .create__lenta a {
+    font-size: 14px;
+  }
+  .footer p {
+    font-size: 12px;
+}
+}
+@media (max-width: 320px) {
+  .header__inner {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .logo img{
+    padding-top: 30px;
+    width: 100px;
+  }
+  .dropbtn {
+    display: block;
+    position: fixed;
+    content: "";
+    left: 250px;
+    top: 18px;
+    z-index: 2;
+    padding-right: 50px;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  .dropdown-content {
+    min-width: 115px;
+    margin-left: -89px;
+  }
+  .dropdown-content a {
+    font-size: 12px;
+    padding: 10px 5px;  
+  }
+
 }
