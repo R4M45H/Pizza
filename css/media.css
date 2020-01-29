@@ -39,11 +39,11 @@
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    padding: 64px 0px 58px 100px;
+    padding: 40px 20px 40px 20px;
   }
   .box-item {
     width: 400px;
-    padding: 64px 0px 58px 10px;
+    padding: 20px 0px 20px 60px;
   }
   .box-text {
     border-right: 0;
@@ -69,7 +69,10 @@
     font-weight: 700;
     color: #fff;
   }
-
+  .active, 
+  .accordion:hover {
+    background-color: #ee252d;
+  }
   .header__inner {
     flex-direction: column;
   }
@@ -90,8 +93,8 @@
     padding-top: 30px;
   }
   .box {
-    width: 400px;
-    padding: 64px 0px 58px 40px;
+    width: 364px;
+    padding: 20px;
   }
   .box-text {
     padding-bottom: 15px;
@@ -107,13 +110,6 @@
   .create__title > h2::after {
     display: none;
   }
-  .tab-header > li::after {
-    display: none;
-  }
-  .tab-header > li {
-    padding-bottom: 10px;
-    margin-left: 0;
-  }
   .subtitle p {
     font-size: 16px;
   }
@@ -125,16 +121,6 @@
   }
   .box-text p {
     font-size: 16px;
-  }
-  .tab-header {
-    padding: 20px 0;
-    max-width: 173px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .tab-header__item {
-    margin: 10px 0;
   }
   .box-item {
     width: 400px;
@@ -180,8 +166,6 @@
   }
   .box {
     text-align: center;
-    width: 408px;
-    padding: 20px 30px 20px 30px;
   }
   .box-item {
     width: 300px;
@@ -201,23 +185,31 @@
   .create__lenta {
     background-size: contain;
     max-width: 100%;
-    height: 50px;
+    height: 70px;
   }
   .create__lenta a {
-    font-size: 18px;
+    font-size: 20px;
   }
   .footer p {
     font-size: 14px;
   }
 }
 @media (max-width: 480px) {
+  .header__inner {
+    flex-direction: row;
+    max-width: 430px;
+  }
+  .logo{
+    width: 195px;
+    height: 75px;
+    padding: 0;
+  }
+  .logo img{
+    padding: 10px 20px;
+  }
   .dropbtn {
     display: block;
-    position: fixed;
-    content: "";
-    left: 340px;
-    top: 15px;
-    z-index: 2;
+    position: static;
   }
   .header__nav {
     display: none;
@@ -240,17 +232,14 @@
   .subtitle p {
     font-size: 12px;
   }
-  .content__btn {
-    margin-top: 20px;
-    font-size: 20px;
-    padding: 6px 20px 6px 20px;
+  .content__btn a {
+    font-size: 16px;
   }
-  .tab-header {
-    font-size: 14px;
+  .accordion {
+    font-size: 16px;
+    width: 286px;
   }
-  .tab-header > li {
-    padding-bottom: 12px;
-  }
+
   .box {
     text-align: center;
     width: 250px;
@@ -287,6 +276,9 @@
   .create__title > h2 {
     font-size: 18px;
   }
+  .create__lenta {
+    height: 60px;
+  }
   .create__lenta a {
     font-size: 14px;
   }
@@ -294,19 +286,8 @@
     font-size: 12px;
   }
 }
-@media (max-width: 375px) {
-  .dropbtn {
-    left: 295px;
-  }
-  .create__lenta a {
-    padding: 0;
-  }
-}
-@media (max-width: 360px) {
-  .dropbtn {
-    left: 290px;
-  }
-}
+
+
 @media (max-width: 320px) {
   .header__inner {
     max-width: 320px;
@@ -314,17 +295,11 @@
     padding: 0;
   }
   .logo img {
-    padding-top: 30px;
-    width: 100px;
+    padding: 20px 10px;
+    width: 150px;
   }
   .dropbtn {
-    display: block;
-    position: fixed;
-    content: "";
-    left: 250px;
-    top: 18px;
-    z-index: 2;
-    padding-right: 50px;
+    padding-right: 20px;
   }
 
   .bar1,
@@ -336,12 +311,15 @@
     margin: 4px 0;
     transition: 0.4s;
   }
+  .accordion {
+   font-size: 14px;
+  }
   .dropdown-content {
     min-width: 115px;
     margin-left: -89px;
   }
   .dropdown-content a {
     font-size: 12px;
-    padding: 10px 5px;
+    padding: 15px 10px;
   }
 }
