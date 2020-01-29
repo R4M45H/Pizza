@@ -436,15 +436,17 @@ a:hover {
 }
 
 .create__lenta:hover {
-background-image: url("../images/allwhite.png");
-transition: 0.9s;
+  background-image: url("../images/allwhite.png");
+  transition: 0.9s;
 }
 .create__lenta a:hover {
   transition: 0.9;
   font-weight: 900;
   color: #ee252d;
-  }
+}
+
 /*==========Footer==========*/
+
 .footer {
   background-image: url("../images/bg-footer.png");
   width: 100%;
