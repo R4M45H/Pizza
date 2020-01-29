@@ -152,6 +152,7 @@ a:hover {
 
 .content {
   width: 100%;
+  background: #ee252d;
   background-image: url("../images/bg-content.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -312,6 +313,7 @@ a:hover {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+
 /*=========Tabs========*/
 
 
@@ -421,6 +423,7 @@ a:hover {
 /*==========Footer==========*/
 
 .footer {
+  background: #ee252d;
   background-image: url("../images/bg-footer.png");
   width: 100%;
   text-align: center;
